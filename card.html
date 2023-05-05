@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Card</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css?_v=20230505231758">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230505231758">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header2 header3">
+			<div class="header__top header-top">
+				<div class="header-top__container">
+					<div class="header-top__row">
+						<div class="header-top__menu top-menu">
+							<ul class="top-menu__list">
+								<li class="top-menu__link"><a href="#">Новини та cтатті</a></li>
+								<li class="top-menu__link"><a href="#">Оплата та доставка</a></li>
+								<li class="top-menu__link"><a href="#">Гарантія</a></li>
+								<li class="top-menu__link"><a href="#">Обмін і повернення</a></li>
+								<li class="top-menu__link"><a href="#">Контакти</a></li>
+							</ul>
+						</div>
+						<div class="header-top__settings">
+							<div class="header-top__phone"><a href=”tel:+380670010203”>+38 067 001-02-03</a></div>
+							<select class="header-top__language">
+								<option value="1">English</option>
+								<option value="2">Українська</option>
+							</select>
+							<select class="header-top__currency">
+								<option value="1">₴ UAH</option>
+								<option value="2">$ USD</option>
+								<option value="3">€ EUR</option>
+							</select>
+						</div>
+					</div>
+					<span class="header__line"></span>
+				</div>
+			</div>
+			<div class="header__bottom header-bottom">
+				<div class="header-bottom__container">
+					<div class="header-bottom__row">
+						<div class="header-bottom__logo"><a href="/"><picture><source srcset="img/headerLogoIMagBlack.webp" type="image/webp"><img src="img/headerLogoIMagBlack.png" alt=""></picture></a></div>
+						<div class="header-bottom__menu menu">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item has-submenu">
+										<a href="#" class="menu__link">iPhone <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+										<ul class="menu__submenu">
+											<li><a href="#">iPhone 14</a></li>
+											<li><a href="#">iPhone 13</a></li>
+											<li><a href="#">iPhone XS</a></li>
+											<li><a href="#">iPhone 14pro</a></li>
+										</ul>
+									</li>
+
+									<li class="menu__item has-submenu">
+										<a href="#" class="menu__link">Mac <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+										<ul class="menu__submenu">
+											<li><a href="#">MacBook pro</a></li>
+											<li><a href="#">MacBook Air</a></li>
+										</ul>
+									</li>
+
+									<li class="menu__item has-submenu">
+										<a href="#" class="menu__link">Watch <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+										<ul class="menu__submenu">
+											<li><a href="#">Apple Watch 6</a></li>
+											<li><a href="#">Apple Watch 5</a></li>
+										</ul>
+									</li>
+
+									<li class="menu__item has-submenu">
+										<a href="#" class="menu__link">iPad <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+										<ul class="menu__submenu">
+											<li><a href="#">iPad</a></li>
+											<li><a href="#">iPad</a></li>
+											<li><a href="#">iPad</a></li>
+										</ul>
+									</li>
+
+									<li class="menu__item has-submenu">
+										<a href="#" class="menu__link">AirPods <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+										<ul class="menu__submenu">
+											<li><a href="#">AirPods 12</a></li>
+											<li><a href="#">AirPods 11</a></li>
+											<li><a href="#">AirPods 10</a></li>
+										</ul>
+									</li>
+
+									<li class="menu__item"><a href="#" class="menu__link">Аксесуари</a></li>
+
+									<li class="menu__item has-submenu">
+										<a href="#" class="menu__link">Вживана техніка <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+										<ul class="menu__submenu">
+											<li><a href="#">iPhone</a></li>
+											<li><a href="#">Mac</a></li>
+											<li><a href="#">Watch</a></li>
+											<li><a href="#">iPad</a></li>
+											<li><a href="#">AirPods</a></li>
+										</ul>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+						<div class="header-bottom__icons">
+							<div class="header-bottom__icon search2"><a href="#"><img src="img/icons/search-min.svg" alt=""></a>
+							</div>
+							<div class="header-bottom__icon"><a href="#"><img src="img/icons/user-min.svg" alt=""></a></div>
+							<div class="header-bottom__icon bag"><a href="#"><img src="img/icons/shopping-bag-min.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__search header__search2">
+					<form class="header__form" action="GET">
+						<div class="search__container">
+							<div class="header-search__row">
+								<div class="header-bottom__icon header-bottom__icon-search"><a href="#"><img src="img/icons/header2search.svg" alt=""></a>
+								</div>
+								<input class="header__search-text search-text2" type="search" name="search-text" placeholder="Що ви шукаєте?">
+								<a class="header__search-close" href="#"><i class="fa-solid fa-xmark"></i></a>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</header>
+		<main class="page">
+
+			<body>
+				<div class="bread-crumbs">
+					<div class="bread-crumbs__container">
+						<div class="bread-crumbs__row">
+							<p>Головна /</p>
+							<p>iPhone /</p>
+							<p>iPhone 14 /</p>
+							<p>Apple iPhone 14 128GB Midnight (e-Sim)</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card__container">
+						<div class="card__row">
+							<div class="card__images">
+								<div class="card__images-column">
+									<div class="card__gray card__image-ibg"><picture><source srcset="img/card/iphone-gray.webp" type="image/webp"><img src="img/card/iphone-gray.png" alt=""></picture></div>
+									<div class="card__side card__image-ibg"><picture><source srcset="img/card/iphone-side.webp" type="image/webp"><img src="img/card/iphone-side.png" alt=""></picture></div>
+									<div class="card__front card__image-ibg"><picture><source srcset="img/card/iphone-front.webp" type="image/webp"><img src="img/card/iphone-front.png" alt=""></picture></div>
+								</div>
+								<div class="card__basic card__image-ibg"><picture><source srcset="img/card/iphone.webp" type="image/webp"><img src="img/card/iphone.png" alt=""></picture></div>
+							</div>
+							<div class="card__body">
+								<div class="card__articul">Артикул товару: 801091</div>
+								<h2 class="card__title">Apple iPhone 14 128GB Midnight (e-Sim)</h2>
+								<div class="card__order">Під замовлення. 2-3 дні</div>
+								<div class="card__return">
+									<div class="card__return-icon"><img src="img/icons/return.svg" alt=""></div>
+									<div class="card__return-text">Повернення товару протягом 14 днів</div>
+								</div>
+								<div class="card__guarantee">
+									<div class="card__guarantee-icon"><img src="img/icons/guarantee.svg" alt=""></div>
+									<div class="card__guarantee-text">Гарантія від продавця 30 днів</div>
+								</div>
+								<span class="card__line line"></span>
+								<div class="card__memory-title">Об’єм вбудованої пам’яті</div>
+								<div class="card__checbox">
+									<div class="card__radio-toolbar">
+										<input type="radio" id="radio1" name="radios" checked>
+										<label for="radio1">128 ГБ</label>
+										<input type="radio" id="radio2" name="radios">
+										<label for="radio2">256 ГБ</label>
+										<input type="radio" id="radio3" name="radios">
+										<label for="radio3">512 ГБ</label>
+									</div>
+								</div>
+								<span class="card__line line"></span>
+
+								<div class="card__color">
+									<div class="card__color-title">Основний колір</div>
+									<div class="card__color-checkboxes">
+										<label class="card__color-checkbox">
+											<input type="checkbox" name="color" value="violet">
+											<div class="card__color-checkbox-ball violet">
+												<div class="card__color-checkbox-label">Violet</div>
+											</div>
+
+										</label>
+										<label class="card__color-checkbox">
+											<input type="checkbox" name="color" value="black">
+											<div class="card__color-checkbox-ball black">
+												<div class="card__color-checkbox-label">Space Black</div>
+											</div>
+
+										</label>
+										<label class="card__color-checkbox">
+											<input type="checkbox" name="color" value="beige">
+											<div class="card__color-checkbox-ball beige">
+												<div class="card__color-checkbox-label">Gold</div>
+											</div>
+
+										</label>
+										<label class="card__color-checkbox">
+											<input type="checkbox" name="color" value="gray">
+											<div class="card__color-checkbox-ball gray">
+												<div class="card__color-checkbox-label">Gray</div>
+											</div>
+
+										</label>
+									</div>
+								</div>
+
+								<span class="card__line line"></span>
+								<div class="card__sim-title">Тип Sim карти</div>
+								<div class="card__checbox card__sim-checkbox">
+									<div class="card__radio-toolbar">
+										<input type="radio" id="radio4" name="radiosSim" checked>
+										<label for="radio4">eSIM</label>
+										<input type="radio" id="radio5" name="radiosSim">
+										<label for="radio5">SIM</label>
+										<input type="radio" id="radio6" name="radiosSim">
+										<label for="radio6">Dual SIM</label>
+									</div>
+								</div>
+
+								<div class="card__money">
+									<div class="card__price">29 256 ₴</div>
+									<div class="card__discount">32 201 ₴</div>
+									<div class="card__saving">Економія 3 888 грн</div>
+								</div>
+
+								<a href="#" class="card__pay">Купити</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab">
+					<div class="tab__container">
+						<div data-tabs="768" class="tabs">
+							<nav data-tabs-titles class="tabs__navigation">
+								<button type="button" class="tabs__title _tab-active">Опис</button>
+								<button type="button" class="tabs__title">Характеристики</button>
+								<button type="button" class="tabs__title">Що в комплекті</button>
+								<button type="button" class="tabs__title">Схожі товари</button>
+							</nav>
+							<div data-tabs-body class="tabs__content">
+								<div class="tabs__body card-tab-description">
+									<div class="card-tab-description__revolution">
+										<div class="card-tab-description__revolution-title">Революція стилю <br> та
+											функціональності</div>
+										<div class="card-tab-description__revolution-text">Відкрийте для себе вражаючі можливості
+											нового iPhone 14
+											Pro/Max, які виходять за рамки звичайного. Унікальні функції безпеки, професійний
+											об'єктив 48 Мп, досконалий чіп A16 Bionic та провідні технології сучасності поєднані у
+											міцному та стильному корпусі смартфону.</div>
+									</div>
+									<div class="card-tab-description__items">
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/phone.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Дисплей Super Retina XDR 6,1 дюйма</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/battery.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Цілий день без підзарядки, до 20 годин відтворення відео</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/image.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Удосконалена система камер для якісних фотографій за будь-якого
+												освітлення</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/processor.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Чип A15 Bionic із 5-ядерним графічним процесором для найвищої
+												продуктивності</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/cinema.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Режим «Кінематограф» тепер підтримує зйомку відео в стандарті
+												Dolby Vision (4K із частотою до 30 кадрів/с)</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/water.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Передові технології захисту пристрою: Ceramic Shield і захист
+												від води</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/youtube.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Режим «Швидкий рух» для плавної та стабільної зйомки відео з
+												рук</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/settings.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">iOS 16 пропонує ще більше можливостей для персоналізації,
+												спілкування та обміну інформацією</div>
+										</div>
+										<div class="card-tab-description__item item">
+											<div class="item__svg"><img src="img/card/icons/safety.svg" alt=""></d>
+											</div>
+											<div class="item__line line"></div>
+											<div class="item__text">Надважлива технологія безпеки: функція «Виявлення аварій»
+												викличе допомогу, коли ви не в змозі</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body card-tab-characteristic">
+									<div class="card-tab-characteristic__items">
+										<div class="card-tab-characteristic__column">
+											<div class="card-tab-characteristic__item item">
+												<div class="item__line line"></div>
+												<div class="item__row">
+													<div class="item__title">Дисплей</div>
+													<div class="item__text">
+														<p>Super Retina XDR</p>
+														<p>2796 x 1290 PX</p>
+														<p>460 PPI</p>
+														<p>Dynamic Island</p>
+														<p>Always-On display</p>
+														<p>ProMotion з адаптивною частотою оновлення до 120 Гц</p>
+														<p>HDR display</p>
+														<p>Максимальна яскравість 1000 ніт (типова); 1600 ніт пікова яскравість (HDR);
+															Пікова яскравість 2000 ніт (на вулиці)</p>
+
+													</div>
+												</div>
+											</div>
+											<div class="card-tab-characteristic__item item">
+												<div class="item__line line"></div>
+												<div class="item__row">
+													<div class="item__title">Фронтальна камера TrueDepth</div>
+													<div class="item__text">
+														<p>Камера 12 Мп</p>
+														<p>Діафрагма ƒ/1,9/p>
+														<p>Автофокус із Focus</p>
+														<p>Pixels</p>
+														<p>Шестиелементна лінза</p>
+														<p>Retina Flash</p>
+														<p>Deep Fusion</p>
+														<p>Smart HDR 4</p>
+														<p>Портретний режим із розширеним боке</p>
+
+													</div>
+												</div>
+											</div>
+											<div class="card-tab-characteristic__item item">
+												<div class="item__line line"></div>
+												<div class="item__row">
+													<div class="item__title">Відеозйомка</div>
+													<div class="item__text">
+														<p>Запис відео 4K зі швидкістю 24 кадр./с, 25 кадр./с, 30 кадр./с або 60
+															кадр./с</p>
+														<p>Запис HD-відео 1080p зі швидкістю 25, 30 або 60 кадрів в секунду</p>
+														<p>Запис HD-відео 720p зі швидкістю 30 кадрів в секунду</p>
+														<p>Кінематографічний режим до 4K HDR зі швидкістю 30 кадрів/с</p>
+														<p>Режим Action до 2,8K при 60 кадрах в секунду</p>
+														<p>Запис HDR-відео з Dolby Vision до 4K зі швидкістю 60 кадрів в секунду</p>
+
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="card-tab-characteristic__column">
+											<div class="card-tab-characteristic__item item">
+												<div class="item__line line"></div>
+												<div class="item__row">
+													<div class="item__title">Сенсори</div>
+													<div class="item__text">
+														Face ID <p></p>
+														<p>Сканер LiDAR</p>
+														<p>Трьохосьовий гіроскоп</p>
+														<p>Акселерометр</p>
+														<p>Датчик зближення</p>
+														<p>Датчик зовнішнього освітлення</p>
+													</div>
+												</div>
+											</div>
+											<div class="card-tab-characteristic__item item">
+												<div class="item__line line"></div>
+												<div class="item__row">
+													<div class="item__title">Акумулятор</div>
+													<div class="item__text">
+														<p>Відтворення відео: до 29 годин;</p>
+														<p>Перегляд відео у режимі стрімінгу: до 25 годин;</p>
+														<p>Відтворення аудіо: До 95 годин;</p>
+														<p>Можливість швидкого заряджання: Заряджання до 50% приблизно за 30 хвилин з
+															адаптером потужністю 20 Вт або вище (купується окремо);</p>
+														<p>Бездротова зарядка MagSafe до 15W (купується окремо);</p>
+														<p>Бездротова зарядка Qi до 7,5W</p>
+
+													</div>
+												</div>
+											</div>
+											<div class="card-tab-characteristic__item item">
+												<div class="item__line line"></div>
+												<div class="item__row">
+													<div class="item__title">Камера</div>
+													<div class="item__text">
+														<p>Система професійних камер: 48 Мп Основна: 24 мм, діафрагма ƒ/1,78</p>
+														<p>Надширококутна: 13 мм, діафрагма ƒ/2,2 та поле зору 120°</p>
+														<p>Телефото (забезпечується чотирипіксельним сенсором): 48 мм, діафрагма
+															ƒ/1,78,
+															оптична стабілізація зображення зі зсувом сенсора другого покоління</p>
+														<p>Кришка об'єктива із сапфірового скла;</p>
+														<p>Адаптивний спалах True Tone</p>
+														<p>Розумний HDR 4</p>
+														<p>Портретний режим з покращеним боке та контролем глибини</p>
+														<p>Портрети у нічному режимі за допомогою LiDAR Scanner;</p>
+														<p>Макрозйомка; AppleProRAW;</p>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs__body card-tab-set">
+									<div class="card-tab-set__items">
+										<div class="card-tab-set__item item">
+											<div class="item__image image-ibg"><picture><source srcset="img/set/phone.webp" type="image/webp"><img src="img/set/phone.png" alt=""></picture></div>
+											<div class="item__text">iPhone 14 Pro Max</div>
+										</div>
+										<div class="card-tab-set__item item">
+											<div class="item__image	image-ibg"><picture><source srcset="img/set/cable.webp" type="image/webp"><img src="img/set/cable.png" alt=""></picture></div>
+											<div class="item__text">Кабель USB-C/Lightning</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="tabs__body card-tab-similar">
+									<div class="card-tab-similar__items">
+
+										<div class="card-tab-similar__item item">
+											<div class="item__image image-ibg"><picture><source srcset="img/similar/gold.webp" type="image/webp"><img src="img/similar/gold.png" alt=""></picture></div>
+											<div class="item__manifestness manifestness">В наявності</div>
+											<div class="item__name name">Apple iPhone 14 128GB Midnight (e-Sim)</div>
+											<div class="item__price price">
+												<div class="item__discont discont">32 201 ₴</div>
+												<div class="item__actual-price actual-price">29 256 ₴</div>
+											</div>
+											<a href="#" class="item__pay pay">Купити</a>
+										</div>
+
+										<div class="card-tab-similar__item item">
+											<div class="item__category-row">
+												<div class="item__category all-categories green-bord">Новинка</div>
+											</div>
+											<div class="item__image image-ibg"><picture><source srcset="img/similar/purple.webp" type="image/webp"><img src="img/similar/purple.png" alt=""></picture></div>
+											<div class="item__manifestness manifestness">В наявності</div>
+											<div class="item__name name">Смартфон Apple iPhone 14 Pro Max 256Gb Purple</div>
+											<div class="item__price price">
+												<div class="item__discont discont">32 201 ₴</div>
+												<div class="item__actual-price actual-price">29 256 ₴</div>
+											</div>
+											<a href="#" class="item__pay pay">Купити</a>
+										</div>
+
+										<div class="card-tab-similar__item item">
+											<div class="item__category-row">
+												<div class="item__category all-categories">Вживаний товар</div>
+											</div>
+											<div class="item__image image-ibg"><picture><source srcset="img/similar/red.webp" type="image/webp"><img src="img/similar/red.png" alt=""></picture></div>
+											<div class="item__manifestness manifestness">В наявності</div>
+											<div class="item__name name">Смартфон Apple iPhone 14 128Gb Red
+
+											</div>
+											<div class="item__price price">
+												<div class="item__discont discont">32 201 ₴</div>
+												<div class="item__actual-price actual-price">29 256 ₴</div>
+											</div>
+											<a href="#" class="item__pay pay">Купити</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="products">
+					<!-- Оболонка слайдера -->
+					<div class="products__container">
+						<div class="products__slider swiper-products">
+							<!-- Частина слайдера, що рухається -->
+							<div class="products__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="products__slide swiper-slide">
+									<div class="products__image image-ibg"><picture><source srcset="img/products/one.webp" type="image/webp"><img src="img/products/one.png" alt=""></picture></div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__image image-ibg"><picture><source srcset="img/products/two.webp" type="image/webp"><img src="img/products/two.png" alt=""></picture></div>
+								</div>
+								<div class="products__slide swiper-slide">
+									<div class="products__image image-ibg"><picture><source srcset="img/products/three.webp" type="image/webp"><img src="img/products/three.png" alt=""></picture></div>
+								</div>
+							</div>
+							<!-- Якщо потрібна пагінація -->
+							<div class="swiper-pagination"></div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev"></button>
+							<button type="button" class="swiper-button-next"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="along">
+					<div class="along__container">
+						<h2 class="along__title">З цим товаром купують</h2>
+						<!-- Оболонка слайдера -->
+						<div class="along__slider swiper-along">
+							<!-- Частина слайдера, що рухається -->
+							<div class="along__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="along__slide swiper-slide">
+									<div class="along__wrapper-slide">
+										<div class="along__image-ibg"><picture><source srcset="img/card/along/glass.webp" type="image/webp"><img src="img/card/along/glass.png" alt=""></picture></div>
+										<div class="along__manifestness manifestness">В наявності</div>
+										<div class="along__name name">Захисне скло NEU Chatel Corning Gorilla Glass with mesh for
+											iPhone 14 Pro Max </div>
+									</div>
+									<div class="along__wrapper-slide">
+										<div class="along__price price">
+											<div class="along__discont discont">32 201 ₴</div>
+											<div class="along__actual-price actual-price">29 256 ₴</div>
+										</div>
+										<a href="#" class="along__pay pay">Купити</a>
+									</div>
+								</div>
+								<!-- Слайд -->
+
+								<div class="along__slide swiper-slide">
+									<div class="along__wrapper-slide">
+										<div class="along__image-ibg"><picture><source srcset="img/card/along/magSafe.webp" type="image/webp"><img src="img/card/along/magSafe.png" alt=""></picture></div>
+										<div class="along__manifestness manifestness">В наявності</div>
+										<div class="along__name name">Apple MagSafe Charger for iPhone
+										</div>
+									</div>
+									<div class="along__wrapper-slide">
+										<div class="along__price price">
+											<div class="along__discont discont">1 489 ₴</div>
+											<div class="along__actual-price actual-price">1 899 ₴</div>
+										</div>
+										<a href="#" class="along__pay pay">Купити</a>
+									</div>
+								</div>
+								<!-- Слайд -->
+
+								<div class="along__slide swiper-slide">
+									<div class="along__wrapper-slide">
+										<div class="along__image-ibg"><picture><source srcset="img/card/along/case.webp" type="image/webp"><img src="img/card/along/case.png" alt=""></picture></div>
+										<div class="along__manifestness manifestness">В наявності</div>
+										<div class="along__name name">Чохол-накладка Blueo Crystal Drop PRO Resistance Case for
+											iPhone 14 Pro Max</div>
+									</div>
+									<div class="along__wrapper-slide">
+										<div class="along__price price">
+											<div class="along__discont discont">799 ₴</div>
+										</div>
+										<a href="#" class="along__pay pay">Купити</a>
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="along__slide swiper-slide">
+									<div class="along__wrapper-slide">
+										<div class="along__image-ibg"><picture><source srcset="img/card/along/glass.webp" type="image/webp"><img src="img/card/along/glass.png" alt=""></picture></div>
+										<div class="along__manifestness manifestness">В наявності</div>
+										<div class="along__name name">Захисне скло NEU Chatel Corning Gorilla Glass with mesh for
+											iPhone 14 Pro Max </div>
+									</div>
+									<div class="along__wrapper-slide">
+										<div class="along__price price">
+											<div class="along__discont discont">32 201 ₴</div>
+											<div class="along__actual-price actual-price">29 256 ₴</div>
+										</div>
+										<a href="#" class="along__pay pay">Купити</a>
+									</div>
+								</div>
+								<!-- Слайд -->
+								<div class="along__slide swiper-slide">
+									<div class="along__wrapper-slide">
+										<div class="along__image-ibg"><picture><source srcset="img/card/along/glass.webp" type="image/webp"><img src="img/card/along/glass.png" alt=""></picture></div>
+										<div class="along__manifestness manifestness">В наявності</div>
+										<div class="along__name name">Захисне скло NEU Chatel Corning Gorilla Glass with mesh for
+											iPhone 14 Pro Max </div>
+									</div>
+									<div class="along__wrapper-slide">
+										<div class="along__price price">
+											<div class="along__discont discont">32 201 ₴</div>
+											<div class="along__actual-price actual-price">29 256 ₴</div>
+										</div>
+										<a href="#" class="along__pay pay">Купити</a>
+									</div>
+								</div>
+							</div>
+							<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+							<button type="button" class="swiper-button-prev"></button>
+							<button type="button" class="swiper-button-next"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="info">
+					<div class="info__container">
+						<div class="info__items">
+							<div class="info__item item">
+								<div class="item__img"><img src="img/card/icons/info/creditCard.svg" alt=""></div>
+								<div class="item__title">Оплата</div>
+								<div class="item__text">
+									<p>Готівкою при отриманні</p>
+									<p>Картою у магазині</p>
+									<p>Перевод з VISA / MasterCard</p>
+								</div>
+							</div>
+							<div class="info__item item">
+								<div class="item__img"><img src="img/card/icons/info/delivery.svg" alt=""></div>
+								<div class="item__title">Доставка</div>
+								<div class="item__text">
+									<p>Самовивіз з магазину</p>
+									<p>Доставка у відділення «Нова Пошта» або кур'єром</p>
+								</div>
+							</div>
+							<div class="info__item item">
+								<div class="item__img"><img src="img/card/icons/info/pocket.svg" alt=""></div>
+								<div class="item__title">Гарантія</div>
+								<div class="item__text">
+									<p>Обмін та повернення товару здійснюється протягом 14 днів після купівлі згідно із Законом
+										України</p>
+								</div>
+							</div>
+							<div class="info__item item">
+								<div class="item__img"><img src="img/card/icons/info/checkSquare.svg" alt=""></div>
+								<div class="item__title">Якість</div>
+								<div class="item__text">
+									<p>Техніка проходить перевірку спеціалістами. і</p>
+									<p>Крадені, топлені, технічно несправні гаджети — не реалізовуються</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="types">
+					<div class="types__container">
+						<div class="types__row">
+
+							<div class="types__card types-card">
+								<div class="types-card__body">
+									<h3 class="types-card__title">iPhone</h3>
+									<div class="types-card__text">Обирайте ваш новий IPhone</div>
+									<a href="#" class="types-card__all view-all">Всі моделі <i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="types-card__image image-iphone"><picture><source srcset="img/types/iphone.webp" type="image/webp"><img src="img/types/iphone.png" alt=""></picture></div>
+							</div>
+							<div class="types__card types-card">
+								<div class="types-card__body">
+									<h3 class="types-card__title">iPhone</h3>
+									<div class="types-card__text">Обирайте ваш новий IPhone</div>
+									<a href="#" class="types-card__all view-all">Всі моделі <i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="types-card__image image-mac"><picture><source srcset="img/types/mac.webp" type="image/webp"><img src="img/types/mac.png" alt=""></picture></div>
+							</div>
+						</div>
+
+						<div class="types__row">
+							<div class="types__card types-card">
+								<div class="types-card__body">
+									<h3 class="types-card__title">iPhone</h3>
+									<div class="types-card__text">Обирайте ваш новий IPhone</div>
+									<a href="#" class="types-card__all view-all">Всі моделі <i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="types-card__image image-ipad"><picture><source srcset="img/types/ipad.webp" type="image/webp"><img src="img/types/ipad.png" alt=""></picture></div>
+							</div>
+							<div class="types__card types-card">
+								<div class="types-card__body">
+									<h3 class="types-card__title">iPhone</h3>
+									<div class="types-card__text">Обирайте ваш новий IPhone</div>
+									<a href="#" class="types-card__all view-all">Всі моделі <i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="types-card__image image-watch"><picture><source srcset="img/types/watch.webp" type="image/webp"><img src="img/types/watch.png" alt=""></picture></div>
+							</div>
+						</div>
+
+						<div class="types__row">
+							<div class="types__card types-card">
+								<div class="types-card__body">
+									<h3 class="types-card__title">iPhone</h3>
+									<div class="types-card__text">Обирайте ваш новий IPhone</div>
+									<a href="#" class="types-card__all view-all">Всі моделі <i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="types-card__image image-airpods"><picture><source srcset="img/types/airpods.webp" type="image/webp"><img src="img/types/airpods.png" alt=""></picture></div>
+							</div>
+							<div class="types__card types-card">
+								<div class="types-card__body">
+									<h3 class="types-card__title">iPhone</h3>
+									<div class="types-card__text">Обирайте ваш новий IPhone</div>
+									<a href="#" class="types-card__all view-all">Всі моделі <i class="fa-solid fa-angle-right"></i></a>
+								</div>
+								<div class="types-card__image image-accessories"><picture><source srcset="img/types/accessories.webp" type="image/webp"><img src="img/types/accessories.png" alt=""></picture>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<section class="promo card-promo">
+					<div class="promo__container">
+						<h2 class="promo__title">Отримай промокод</h2>
+						<div class="promo__text">Подаруємо промокод на 250 гривень на першу купівлю. Залиште електронну пошту
+							і ми вам його надішлемо</div>
+						<form action="POST">
+							<input class="promo__email" type="email" name="email" placeholder="Електронна пошта куди відправити промокод">
+							<input class="promo__submit" type="submit" value="Надіслати">
+						</form>
+					</div>
+				</section>
+
+	</div>
+</body>
+</main>
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__row">
+			<div class="footer__logo footer-logo2"><picture><source srcset="img/footerLogo2.webp" type="image/webp"><img src="img/footerLogo2.png" alt=""></picture></div>
+			<div class="footer__menus goods">
+				<h3 class="menus__title">Товари</h3>
+				<ul class="menus__list">
+					<li class="menus__item"><a href="" class="menus__link">iPhone</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Mac</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Watch</a></li>
+					<li class="menus__item"><a href="" class="menus__link">iPad</a></li>
+					<li class="menus__item"><a href="" class="menus__link">AirPods</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Аксесуари</a></li>
+				</ul>
+			</div>
+			<div class="footer__menus buyers">
+				<h3 class="menus__title">Покупцям</h3>
+				<ul class="menus__list">
+					<li class="menus__item"><a href="" class="menus__link">Новини та cтатті</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Оплата та доставка</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Гарантія</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Обмін і повернення</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Контакти</a></li>
+				</ul>
+			</div>
+			<div class="footer__menus servis">
+				<h3 class="menus__title">Сервіс</h3>
+				<ul class="menus__list">
+					<li class="menus__item"><a href="" class="menus__link">Ремонт Mac</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Ремонт iPad</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Ремонт iPhone</a></li>
+					<li class="menus__item"><a href="" class="menus__link">Ремонт Watch</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__contacts">
+				<div class="footer__phone"><a href=”tel:+380670010203”>+38 067 001-02-03</a></div>
+				<div class="footer__working">Працюємо щодня<br>з 9:00 до 20:00</div>
+				<div class="footer__write">Напишіть нам</div>
+				<div class="footer__email">order@infoapple.com.ua</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<script src="js/app.min.js?_v=20230505231758"></script>
+</body>
+
+</html>
