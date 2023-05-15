@@ -957,7 +957,7 @@
         let prevSlideSize = 0;
         let index = 0;
         if (typeof swiperSize === "undefined") return;
-        if (typeof spaceBetween === "string" && spaceBetween.indexOf("%") >= 0) spaceBetween = parseFloat(spaceBetween.replace("%", "")) / 100 * swiperSize;
+        if (typeof spaceBetween === "string" && spaceBetween.indexOf("%") >= 0) spaceBetween = parseFloat(spaceBetween.replace("%", "")) / 100 * swiperSize; else if (typeof spaceBetween === "string") spaceBetween = parseFloat(spaceBetween);
         swiper.virtualSize = -spaceBetween;
         slides.forEach((slideEl => {
             if (rtl) slideEl.style.marginLeft = ""; else slideEl.style.marginRight = "";
@@ -1026,8 +1026,8 @@
             index += 1;
         }
         swiper.virtualSize = Math.max(swiper.virtualSize, swiperSize) + offsetAfter;
-        if (rtl && wrongRTL && (params.effect === "slide" || params.effect === "coverflow")) wrapperEl.style.width = `${swiper.virtualSize + params.spaceBetween}px`;
-        if (params.setWrapperSize) wrapperEl.style[getDirectionLabel("width")] = `${swiper.virtualSize + params.spaceBetween}px`;
+        if (rtl && wrongRTL && (params.effect === "slide" || params.effect === "coverflow")) wrapperEl.style.width = `${swiper.virtualSize + spaceBetween}px`;
+        if (params.setWrapperSize) wrapperEl.style[getDirectionLabel("width")] = `${swiper.virtualSize + spaceBetween}px`;
         if (gridEnabled) swiper.grid.updateWrapperSize(slideSize, snapGrid, getDirectionLabel);
         if (!params.centeredSlides) {
             const newSlidesGrid = [];
@@ -1053,7 +1053,7 @@
             }
         }
         if (snapGrid.length === 0) snapGrid = [ 0 ];
-        if (params.spaceBetween !== 0) {
+        if (spaceBetween !== 0) {
             const key = swiper.isHorizontal() && rtl ? "marginLeft" : getDirectionLabel("marginRight");
             slides.filter(((_, slideIndex) => {
                 if (!params.cssMode || params.loop) return true;
@@ -1066,9 +1066,9 @@
         if (params.centeredSlides && params.centeredSlidesBounds) {
             let allSlidesSize = 0;
             slidesSizesGrid.forEach((slideSizeValue => {
-                allSlidesSize += slideSizeValue + (params.spaceBetween ? params.spaceBetween : 0);
+                allSlidesSize += slideSizeValue + (spaceBetween || 0);
             }));
-            allSlidesSize -= params.spaceBetween;
+            allSlidesSize -= spaceBetween;
             const maxSnap = allSlidesSize - swiperSize;
             snapGrid = snapGrid.map((snap => {
                 if (snap < 0) return -offsetBefore;
@@ -1079,9 +1079,9 @@
         if (params.centerInsufficientSlides) {
             let allSlidesSize = 0;
             slidesSizesGrid.forEach((slideSizeValue => {
-                allSlidesSize += slideSizeValue + (params.spaceBetween ? params.spaceBetween : 0);
+                allSlidesSize += slideSizeValue + (spaceBetween || 0);
             }));
-            allSlidesSize -= params.spaceBetween;
+            allSlidesSize -= spaceBetween;
             if (allSlidesSize < swiperSize) {
                 const allSlidesOffset = (swiperSize - allSlidesSize) / 2;
                 snapGrid.forEach(((snap, snapIndex) => {
@@ -1164,12 +1164,14 @@
         }));
         swiper.visibleSlidesIndexes = [];
         swiper.visibleSlides = [];
+        let spaceBetween = params.spaceBetween;
+        if (typeof spaceBetween === "string" && spaceBetween.indexOf("%") >= 0) spaceBetween = parseFloat(spaceBetween.replace("%", "")) / 100 * swiper.size; else if (typeof spaceBetween === "string") spaceBetween = parseFloat(spaceBetween);
         for (let i = 0; i < slides.length; i += 1) {
             const slide = slides[i];
             let slideOffset = slide.swiperSlideOffset;
             if (params.cssMode && params.centeredSlides) slideOffset -= slides[0].swiperSlideOffset;
-            const slideProgress = (offsetCenter + (params.centeredSlides ? swiper.minTranslate() : 0) - slideOffset) / (slide.swiperSlideSize + params.spaceBetween);
-            const originalSlideProgress = (offsetCenter - snapGrid[0] + (params.centeredSlides ? swiper.minTranslate() : 0) - slideOffset) / (slide.swiperSlideSize + params.spaceBetween);
+            const slideProgress = (offsetCenter + (params.centeredSlides ? swiper.minTranslate() : 0) - slideOffset) / (slide.swiperSlideSize + spaceBetween);
+            const originalSlideProgress = (offsetCenter - snapGrid[0] + (params.centeredSlides ? swiper.minTranslate() : 0) - slideOffset) / (slide.swiperSlideSize + spaceBetween);
             const slideBefore = -(offsetCenter - slideOffset);
             const slideAfter = slideBefore + swiper.slidesSizesGrid[i];
             const isVisible = slideBefore >= 0 && slideBefore < swiper.size - 1 || slideAfter > 1 && slideAfter <= swiper.size || slideBefore <= 0 && slideAfter >= swiper.size;
@@ -1790,10 +1792,14 @@
             }
         }
         if (isPrev) prependSlidesIndexes.forEach((index => {
+            swiper.slides[index].swiperLoopMoveDOM = true;
             slidesEl.prepend(swiper.slides[index]);
+            swiper.slides[index].swiperLoopMoveDOM = false;
         }));
         if (isNext) appendSlidesIndexes.forEach((index => {
+            swiper.slides[index].swiperLoopMoveDOM = true;
             slidesEl.append(swiper.slides[index]);
+            swiper.slides[index].swiperLoopMoveDOM = false;
         }));
         swiper.recalcSlides();
         if (params.slidesPerView === "auto") swiper.updateSlides();
@@ -3508,10 +3514,6 @@
             slidesPerView: 1.2,
             spaceBetween: 10,
             speed: 800,
-            navigation: {
-                prevEl: ".swiper-button-prev",
-                nextEl: ".swiper-button-next"
-            },
             breakpoints: {
                 640: {
                     slidesPerView: 1.2,
@@ -3661,6 +3663,7 @@
     }
     setMyBlockWidth();
     window.addEventListener("resize", setMyBlockWidth);
+
     const smallImages = document.querySelectorAll(".card__images-column img");
     const bigImage = document.querySelector(".card__basic img");
     smallImages.forEach((image => {
@@ -3668,6 +3671,7 @@
             bigImage.src = image.src;
         }));
     }));
+	 
     const checkboxes = document.querySelectorAll('input[name="color"]');
     checkboxes.forEach((checkbox => {
         checkbox.addEventListener("change", (function() {
