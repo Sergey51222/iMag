@@ -1,5 +1,10 @@
+/* Default Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 @charset "UTF-8";
+
+/* null styles
+ */
 * {
   padding: 0px;
   margin: 0px;
@@ -104,18 +109,15 @@ h6 {
   min-width: 0;
 }
 
-/*
-(i) Стилі будуть застосовуватись до
-всіх класів, що містять *__container
-Наприклад header__container, main__container і т.п.
-Сніппет (HTML): cnt
-*/
+/* container */
 
 [class*=__container] {
   max-width: 81.875rem;
   margin: 0 auto;
   padding: 0 0.9375rem;
 }
+
+/* General styles */
 
 [class*=-ibg] {
   position: relative;
@@ -167,9 +169,7 @@ h6 {
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.753);
-  /* цвет затемнения */
   z-index: 2;
-  /* установить z-index, больший, чем у всплывающего окна */
 }
 
 .page-search-active2::before {
@@ -180,9 +180,7 @@ h6 {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.753);
-  /* цвет затемнения */
   z-index: 2;
-  /* установить z-index, больший, чем у всплывающего окна */
 }
 
 .line {
@@ -254,6 +252,8 @@ h6 {
   background: #00529e;
 }
 
+/* Нeader */
+
 .header__bottom {
   position: relative;
 }
@@ -314,6 +314,8 @@ h6 {
   color: #fff;
   padding: 5px 15px;
 }
+
+/* header-top */
 
 .header-top__row {
   height: 62px;
@@ -403,6 +405,8 @@ h6 {
   color: #080808;
 }
 
+/* header-bottom */
+
 .header-bottom__logo {
   max-width: 187px;
   max-height: 45px;
@@ -483,6 +487,8 @@ h6 {
   margin-left: 0;
 }
 
+/* menu */
+
 .menu ._active {
   -webkit-transform: translate(0px, 0px);
       -ms-transform: translate(0px, 0px);
@@ -551,6 +557,8 @@ h6 {
 .icon-menu {
   display: none;
 }
+
+/* header2 */
 
 .header2 .header__search-close {
   color: #fff;
@@ -643,6 +651,8 @@ h6 {
 .header2 .menu__item {
   position: relative;
 }
+
+/* header3 */
 
 .header3 .header__bottom {
   position: relative;
@@ -737,6 +747,8 @@ h6 {
   position: relative;
 }
 
+/* footer */
+
 .footer {
   background: #202020;
   padding: 71px 0;
@@ -788,6 +800,8 @@ h6 {
   font-size: 18px;
 }
 
+/* footer/menus */
+
 .menus__item {
   font-size: 18px;
   margin-bottom: 10px;
@@ -809,6 +823,8 @@ h6 {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
+/* top */
 
 .top {
   padding-top: 75px;
@@ -875,6 +891,8 @@ h6 {
 .top__details a:hover {
   text-decoration: underline;
 }
+
+/* varieties */
 
 .varieties__row {
   display: -webkit-box;
@@ -1032,6 +1050,8 @@ h6 {
   background: #00529e;
 }
 
+/* promo */
+
 .promo {
   background: #202020;
   padding: 130px 0;
@@ -1129,6 +1149,8 @@ h6 {
   background: #00529e;
 }
 
+/* types */
+
 .types {
   margin-bottom: 100px;
 }
@@ -1201,6 +1223,8 @@ h6 {
   max-width: 505px;
   max-height: 368px;
 }
+
+/* news */
 
 .news {
   margin-bottom: 130px;
@@ -1281,6 +1305,8 @@ h6 {
   width: 120px;
 }
 
+/* top Version 2 */
+
 .top2 {
   padding-top: 75px;
   margin-bottom: 100px;
@@ -1306,6 +1332,8 @@ h6 {
   margin-bottom: 30px;
 }
 
+/* bread-crumbs */
+
 .bread-crumbs {
   margin-top: 40px;
   margin-bottom: 30px;
@@ -1328,6 +1356,8 @@ h6 {
 .bread-crumbs__row *:first-child {
   margin-left: 0;
 }
+
+/* card */
 
 .card {
   background: #F0F2F5;
@@ -1913,6 +1943,8 @@ h6 {
   margin-bottom: 10px;
 }
 
+/* products */
+
 .products {
   background: #202020;
   height: 900px;
@@ -1941,6 +1973,8 @@ h6 {
 .products__image img {
   mix-blend-mode: lighten;
 }
+
+/* along */
 
 .along {
   margin-bottom: 100px;
@@ -2008,6 +2042,8 @@ h6 {
   display: block;
   width: 100%;
 }
+
+/* info */
 
 .info {
   background: #202020;
@@ -2408,6 +2444,8 @@ button.swiper-pagination-bullet {
       touch-action: pan-y;
 }
 
+/* media pc */
+
 @media (max-width: 81.875em) {
   .header-top__row {
     height: 55px;
@@ -2514,6 +2552,8 @@ button.swiper-pagination-bullet {
     height: 525px;
   }
 }
+
+/* media tablet */
 
 @media (max-width: 61.99875em) {
   .all-categories {
@@ -2761,6 +2801,8 @@ button.swiper-pagination-bullet {
     margin-bottom: 75px;
   }
 }
+
+/* media mobile */
 
 @media (max-width: 47.99875em) {
   .header-bottom__logo {
@@ -3192,6 +3234,8 @@ button.swiper-pagination-bullet {
     cursor: default;
   }
 }
+
+/* media mobileSmall */
 
 @media (max-width: 29.99875em) {
   .varieties__row {
