@@ -1,5 +1,9 @@
+/* Connecting a font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 @charset "UTF-8";
+
+/* Null styles */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -110,6 +114,8 @@ h6 {
 Наприклад header__container, main__container і т.п.
 Сніппет (HTML): cnt
 */
+
+/* General styles */
 
 [class*=__container] {
   max-width: 81.875rem;
@@ -253,6 +259,8 @@ h6 {
 .pay:hover {
   background: #00529e;
 }
+
+/* Header */
 
 .header__bottom {
   position: relative;
@@ -615,6 +623,8 @@ h6 {
   display: none;
 }
 
+/* Footer */
+
 .footer {
   background: #202020;
   padding: 71px 0;
@@ -682,6 +692,8 @@ h6 {
   font-size: 22px;
   margin-bottom: 10px;
 }
+
+/* Top */
 
 .top {
   display: -webkit-box;
@@ -758,6 +770,8 @@ h6 {
 .top__details a:hover {
   text-decoration: underline;
 }
+
+/* Varieties */
 
 .varieties {
   margin-bottom: 100px;
@@ -923,6 +937,8 @@ h6 {
   background: #00529e;
 }
 
+/* Promo */
+
 .promo {
   background: #202020;
   padding: 130px 0;
@@ -1020,6 +1036,8 @@ h6 {
   background: #00529e;
 }
 
+/* Types */
+
 .types {
   margin-bottom: 100px;
 }
@@ -1092,6 +1110,8 @@ h6 {
   max-width: 505px;
   max-height: 368px;
 }
+
+/* News */
 
 .news {
   margin-bottom: 130px;
@@ -1172,30 +1192,7 @@ h6 {
   width: 120px;
 }
 
-.top2 {
-  padding-top: 75px;
-  margin-bottom: 100px;
-  background: #202020;
-}
-
-.top2 .top__image {
-  max-height: 384px;
-  mix-blend-mode: lighten;
-}
-
-.top2 .top__text {
-  position: static;
-  margin: 0 auto 40px;
-  color: #fff;
-  text-align: center;
-}
-
-.top2 .top__best {
-  text-align: center;
-  font-weight: 700;
-  font-size: 72px;
-  margin-bottom: 30px;
-}
+/* Bread-crumbs */
 
 .bread-crumbs {
   margin-top: 40px;
@@ -1219,6 +1216,8 @@ h6 {
 .bread-crumbs__row *:first-child {
   margin-left: 0;
 }
+
+/* Card */
 
 .card {
   background: #F0F2F5;
@@ -1541,6 +1540,8 @@ h6 {
   background: #00529e;
 }
 
+/* Tabs */
+
 .tabs__navigation {
   margin-bottom: 70px;
 }
@@ -1578,6 +1579,8 @@ h6 {
   height: 1px;
   background: #0085FF;
 }
+
+/* Card-Tab-Description */
 
 .card-tab-description__revolution {
   display: -webkit-box;
@@ -1639,6 +1642,8 @@ h6 {
   line-height: 140%;
 }
 
+/* Card-Tab-Characteristic */
+
 .card-tab-characteristic__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1695,6 +1700,8 @@ h6 {
   margin-right: 0;
 }
 
+/* Card-Tab-Set */
+
 .card-tab-set {
   margin-bottom: 100px;
 }
@@ -1728,6 +1735,8 @@ h6 {
 .card-tab-set__items .item__text {
   line-height: 160%;
 }
+
+/* Card-Tab-Similar */
 
 .card-tab-similar {
   margin-bottom: 100px;
@@ -1804,6 +1813,8 @@ h6 {
   margin-bottom: 10px;
 }
 
+/* Products */
+
 .products {
   background: #202020;
   height: 900px;
@@ -1832,6 +1843,8 @@ h6 {
 .products__image img {
   mix-blend-mode: lighten;
 }
+
+/* Along */
 
 .along {
   margin-bottom: 100px;
@@ -1899,6 +1912,8 @@ h6 {
   display: block;
   width: 100%;
 }
+
+/* Info */
 
 .info {
   background: #202020;
@@ -2300,6 +2315,8 @@ button.swiper-pagination-bullet {
       touch-action: pan-y;
 }
 
+/* Media PC */
+
 @media (max-width: 81.875em) {
   .header-top__row {
     height: 55px;
@@ -2403,6 +2420,8 @@ button.swiper-pagination-bullet {
     height: 525px;
   }
 }
+
+/* Media Tablet */
 
 @media (max-width: 61.99875em) {
   .all-categories {
@@ -2637,6 +2656,8 @@ button.swiper-pagination-bullet {
     margin-bottom: 75px;
   }
 }
+
+/* Media Mobile */
 
 @media (max-width: 47.99875em) {
   .manifestness {
@@ -3099,6 +3120,8 @@ button.swiper-pagination-bullet {
     cursor: default;
   }
 }
+
+/* Media Mini-mobile */
 
 @media (max-width: 29.99875em) {
   .varieties__row {
